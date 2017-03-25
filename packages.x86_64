@@ -27,6 +27,7 @@ gnu-netcat
 gparted
 gpm
 gptfdisk
+grml-zsh-config
 gst-libav
 gtk-engine-murrine
 grub
@@ -44,8 +45,8 @@ john
 keychain
 lftp
 lsof
-luakit
 lxde-icon-theme
+macchanger
 mc
 minicom
 mosh

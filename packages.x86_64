@@ -91,6 +91,7 @@ slock
 smartmontools
 sshfs
 strace
+sysdig
 sysstat
 tcpdump
 tcpreplay

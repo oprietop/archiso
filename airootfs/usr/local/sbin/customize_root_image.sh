@@ -17,7 +17,6 @@ chown -R arch:users /home/arch
 find /home/arch -type f -exec chmod 600 {} \;
 find /home/arch -type d -exec chmod 700 {} \;
 
-chown -R mpd /var/lib/mpd
 
 chown -R privoxy:privoxy /etc/privoxy
 
@@ -29,5 +28,10 @@ chmod 755 /usr/local/sbin/*
 
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 
-systemctl enable pacman-init.service choose-mirror.service wicd.service mpd.service gpm.service tor.service privoxy.service
+systemctl enable pacman-init.service choose-mirror.service wicd.service gpm.service tor.service privoxy.service
 systemctl set-default multi-user.target
+
+if [ -f "/var/lib/mpd" ]; then
+    chown -R mpd /var/lib/mpd
+    systemctl enable mpd.service
+fi

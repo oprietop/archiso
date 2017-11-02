@@ -8,7 +8,6 @@ awesome
 bc
 cdrkit
 chntpw
-clonezilla
 ddrescue
 dmenu
 dnsmasq
@@ -38,6 +37,7 @@ hping
 htop
 i3
 iftop
+intel-ucode
 iodine
 iotop
 ipcalc
@@ -82,7 +82,6 @@ perl-rename
 ppp
 privoxy
 rdesktop
-rfkill
 rsync
 rxvt-unicode
 scrot

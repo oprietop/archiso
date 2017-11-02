@@ -11,7 +11,8 @@ out_dir=out
 arch=x86_64
 verbose=""
 pacman_conf=${work_dir}/pacman.conf
-script_path=$(readlink -f ${0%/*})
+#script_path=$(readlink -f ${0%/*})
+script_path=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 # Helper function to run make_*() only one time per architecture.
 run_once() {

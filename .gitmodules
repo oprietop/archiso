@@ -1,3 +1,0 @@
-[submodule "airootfs/home/arch"]
-	path = airootfs/home/arch
-	url = https://github.com/oprietop/dotfiles
